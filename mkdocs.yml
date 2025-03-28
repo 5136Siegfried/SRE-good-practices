@@ -3,9 +3,9 @@ site_name: Good Practices SRE & DevSecOps
 site_description: >-
   Documentation structurée autour des bonnes pratiques DevSecOps, SRE, CI/CD, astreinte, observabilité et infrastructure.
 site_author: Siegfried Sekkai
-repo_url: https://github.com/ton-user/good-practices-sre
+repo_url: https://github.com/5136Siegfried/sre-good-practices
 repo_name: GitHub
-site_url: https://ton-user.github.io/good-practices-sre/
+site_url: https://5136Siegfried.github.io/sre-good-practices/
 
 theme:
   name: material
@@ -17,22 +17,22 @@ theme:
     - content.code.copy
 
 nav:
-  - Accueil: index.md
+  - Accueil: docs/index.md
   - SRE:
-      - Philosophie CI: sre/ci.md
-      - Astreinte: sre/oncall.md
-      - Checklist On-call: sre/oncall-checklist.md
-      - Postmortem: sre/postmortem.md
-      - Schema d'astreinte: sre/oncall-schema.md
+      - Philosophie CI: docs/sre/ci.md
+      - Astreinte: docs/sre/oncall.md
+      - Checklist On-call: docs/sre/oncall-checklist.md
+      - Postmortem: docs/sre/postmortem.md
+      - Schema d'astreinte: docs/sre/oncall-schema.md
   - DevSecOps:
-      - Sécurité CI/CD: devsecops/security-pipeline.md
-      - Gestion des secrets: devsecops/secrets.md
+      - Sécurité CI/CD: docs/devsecops/security-pipeline.md
+      - Gestion des secrets: docs/devsecops/secrets.md
   - Infrastructure:
-      - Terraform: infra/terraform-modules.md
-      - Ansible: infra/ansible.md
+      - Terraform: docs/infra/terraform-modules.md
+      - Ansible: docs/infra/ansible.md
   - Observabilité:
-      - Prometheus: observability/prometheus.md
-      - Grafana: observability/grafana.md
+      - Prometheus: docs/observability/prometheus.md
+      - Grafana: docs/observability/grafana.md
   - Contribuer: contribute.md
   - À propos: team.md
 
