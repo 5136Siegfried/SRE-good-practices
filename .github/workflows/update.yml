@@ -1,37 +1,41 @@
 ---
-name: Update MkDocs Navigation
-on:
-  push:
-    paths:
-      - 'docs/**'
-      - '!mkdocs.yml'
+  name: Update MkDocs Navigation
 
-jobs:
-  update-nav:
-    runs-on: ubuntu-latest
+  on:
+    push:
+      paths:
+        - 'docs/**'
+        - '!mkdocs.yml'
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          persist-credentials: true
+  permissions:
+    contents: write
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+  jobs:
+    update-nav:
+      runs-on: ubuntu-latest
 
-      - name: Install PyYAML
-        run: pip install pyyaml
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+          with:
+            ref: main
+            persist-credentials: true
 
-      - name: Auto-update mkdocs.yml nav
-        run: python .github/scripts/mkdocs/update_mkdocs_nav.py
+        - name: Set up Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: '3.11'
 
-      - name: Commit changes
-        run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-          git add mkdocs.yml
-          git commit -m "ci: auto-update nav section in mkdocs.yml" || echo "No changes"
-          git push origin HEAD:main
+        - name: Install PyYAML
+          run: pip install pyyaml
+
+        - name: Auto-update mkdocs.yml nav
+          run: python .github/scripts/mkdocs/update_mkdocs_nav.py
+
+        - name: Commit changes
+          run: |
+            git config --global user.email "actions@github.com"
+            git config --global user.name "GitHub Actions"
+            git add mkdocs.yml
+            git commit -m "ci: auto-update nav section in mkdocs.yml" || echo "No changes"
+            git push origin HEAD:main
