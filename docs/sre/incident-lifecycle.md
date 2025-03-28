@@ -102,4 +102,13 @@ Un incident n’est clos que s’il a **fait progresser la fiabilité** du syst�
 [Détection] → [Qualification] → [Réponse] → [Résolution] → [Postmortem] → [Capitalisation]
 ```
 
+flowchart LR
+    A[Détection] --> B[Qualification]
+    B --> C[Réponse active]
+    C --> D[Résolution technique]
+    D --> E[Postmortem]
+    E --> F[Capitalisation]
+    F --> G[Prévention future]
+
+
 Chaque étape est une opportunité : de réaction, de communication, de compréhension et de transformation durable.

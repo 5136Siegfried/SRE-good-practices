@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,4 +34,4 @@ jobs:
           git config --global user.name "GitHub Actions"
           git add mkdocs.yml
           git commit -m "ci: auto-update nav section in mkdocs.yml" || echo "No changes"
-          git push
+          git push origin HEAD:main
