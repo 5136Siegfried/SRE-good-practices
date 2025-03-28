@@ -1,0 +1,48 @@
+site_name: Good Practices SRE & DevSecOps
+site_description: >-
+  Documentation structurée autour des bonnes pratiques DevSecOps, SRE, CI/CD, astreinte, observabilité et infrastructure.
+site_author: Siegfried Sekkai
+repo_url: https://github.com/ton-user/good-practices-sre
+repo_name: GitHub
+site_url: https://ton-user.github.io/good-practices-sre/
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.expand
+    - navigation.instant
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Accueil: index.md
+  - SRE:
+      - Philosophie CI: sre/ci.md
+      - Astreinte: sre/oncall.md
+      - Checklist On-call: sre/oncall-checklist.md
+      - Postmortem: sre/postmortem.md
+      - Schema d'astreinte: sre/oncall-schema.md
+  - DevSecOps:
+      - Sécurité CI/CD: devsecops/security-pipeline.md
+      - Gestion des secrets: devsecops/secrets.md
+  - Infrastructure:
+      - Terraform: infra/terraform-modules.md
+      - Ansible: infra/ansible.md
+  - Observabilité:
+      - Prometheus: observability/prometheus.md
+      - Grafana: observability/grafana.md
+  - Contribuer: contribute.md
+  - À propos: team.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - footnotes
+  - tables
+  - attr_list
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details

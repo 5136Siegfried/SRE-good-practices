@@ -55,9 +55,9 @@ Cette checklist reflète l'ensemble des éléments prévus pour ce repository. C
 
 ## 🧯 Gestion des Incidents (`incident-management/`)
 
-- [ ] Schéma de rotation d’astreinte
+- [x] Schéma de rotation d’astreinte
 - [ ] Fiche de procédure “incident response”
-- [ ] Template de postmortem blameless (markdown)
+- [x] Template de postmortem blameless (markdown)
 - [ ] Dashboard des incidents passés (fictifs ou anonymisés)
 - [ ] Modèle de war room / gestion live
 
