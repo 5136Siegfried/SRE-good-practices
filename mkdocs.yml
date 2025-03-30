@@ -5,7 +5,8 @@ site_author: Siegfried Sekkai
 repo_url: https://github.com/5136Siegfried/sre-good-practices
 repo_name: GitHub
 edit_uri: edit/main/docs/
-site_url: https://5136Siegfried.github.io/sre-good-practices/
+site_url: https://5136.fr
+use_directory_urls: false
 theme:
   name: material
   language: fr
@@ -17,8 +18,8 @@ theme:
   - search.highlight
   - search.suggest
   - search.share
-  logo: assets/images/logo.png
-  favicon: assets/images/favicon.png
+  logo: https://5136.fr/assets/images/logo.png
+  favicon: https://5136.fr/assets/images/favicon.png
   palette:
   - scheme: default
     primary: teal
@@ -69,3 +70,5 @@ extra:
     link: https://github.com/5136Siegfried
   generator: false
   copyright: © 2025 – Siegfried Sekkai – Tous droits réservés
+extra_css:
+  - assets/css/custom.css
