@@ -37,6 +37,18 @@ Ce dépôt est à la fois un **starter kit** et un **guide de bonnes pratiques**
 | `docs/`                | Architecture, principes SRE, documentation technique |
 
 ---
+✅ Déploiement sur GitHub Pages (Checklist)
+Étape	Description	Statut
+🔧 1. Type de site	Site statique généré avec MkDocs Material	✅
+🗂️ 2. Branche de déploiement	gh-pages doit être configurée comme source dans Settings > Pages	🔲
+🔁 3. Déploiement local	Commande manuelle : mkdocs gh-deploy --clean --force	🔲
+⚙️ 4. CI/CD automatique	.github/workflows/deploy.yml configure le déploiement à chaque push sur main	🔲
+🌐 5. URL du site	https://5136Siegfried.github.io/sre-good-practices/	🔲
+🧼 6. Pas de /docs dans GitHub Pages	Ne pas utiliser /docs comme source (ça affiche les .md bruts)	🔲
+🕒 7. Propagation DNS	Après déploiement, attendre jusqu’à 60s avant que le site ne soit servi	🔲
+🧪 8. Vérification post-déploiement	Recharger la page avec Ctrl + F5 pour forcer l’actualisation	🔲
+🚫 9. Erreur 404 ?	Refaire mkdocs gh-deploy --clean --force puis re-check Settings > Pages	🔲
+---
 
 ## 🔧 Technologies & Stack
 
