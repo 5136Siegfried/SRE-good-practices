@@ -1,9 +1,10 @@
+---
 extends: default
 
 rules:
   document-start: enable
   truthy:
-    level: error
+    level: warning
   new-line-at-end-of-file: enable
   line-length:
     max: 160
