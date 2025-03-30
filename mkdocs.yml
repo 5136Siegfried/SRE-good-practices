@@ -1,72 +1,71 @@
----
 site_name: Good Practices SRE & DevSecOps
-site_description: >-
-  Documentation structurée autour des bonnes pratiques DevSecOps, SRE, CI/CD, astreinte, observabilité et infrastructure.
+site_description: Documentation structurée autour des bonnes pratiques DevSecOps,
+  SRE, CI/CD, astreinte, observabilité et infrastructure.
 site_author: Siegfried Sekkai
 repo_url: https://github.com/5136Siegfried/sre-good-practices
 repo_name: GitHub
 edit_uri: edit/main/docs/
 site_url: https://5136Siegfried.github.io/sre-good-practices/
-
 theme:
   name: material
   language: fr
   features:
-    - navigation.expand
-    - navigation.instant
-    - search.suggest
-    - content.code.copy
-    - search.highlight
-    - search.suggest
-    - search.share
+  - navigation.expand
+  - navigation.instant
+  - search.suggest
+  - content.code.copy
+  - search.highlight
+  - search.suggest
+  - search.share
   logo: assets/images/logo.png
   favicon: assets/images/favicon.png
   palette:
-    - scheme: default
-      primary: teal
-      accent: cyan
-
+  - scheme: default
+    primary: teal
+    accent: cyan
 nav:
-  - Accueil: docs/index.md
-  - SRE:
-      - Philosophie CI: docs/sre/ci.md
-      - Astreinte: docs/sre/oncall.md
-      - Checklist On-call: docs/sre/oncall-checklist.md
-      - Postmortem: docs/sre/postmortem.md
-      - Schema d'astreinte: docs/sre/oncall-schema.md
-  - DevSecOps:
-      - Sécurité CI/CD: docs/devsecops/security-pipeline.md
-      - Gestion des secrets: docs/devsecops/secrets.md
-  - Infrastructure:
-      - Terraform: docs/infra/terraform-modules.md
-      - Ansible: docs/infra/ansible.md
-  - Observabilité:
-      - Prometheus: docs/observability/prometheus.md
-      - Grafana: docs/observability/grafana.md
-  - Contribuer: contribute.md
-  - À propos: team.md
-
+- Accueil: index.md
+- Team: team.md
+- Readme: README.md
+- Contribute: contribute.md
+- Architecture:
+  - Overview: architecture/overview.md
+- Sre:
+  - Postmortem: sre/postmortem.md
+  - Slo-Sli-Errorbudget: sre/slo-sli-errorbudget.md
+  - Oncall-Schema: sre/oncall-schema.md
+  - Oncall-Checklist: sre/oncall-checklist.md
+  - Incident-Lifecycle: sre/incident-lifecycle.md
+  - Oncall: sre/oncall.md
+  - Ci: sre/ci.md
+- Observability:
+  - Prometheus: observability/prometheus.md
+  - Grafana: observability/grafana.md
+- Infra:
+  - Terraform-Modules: infra/terraform-modules.md
+  - Ansible: infra/ansible.md
+- Devsecops:
+  - Secrets: devsecops/secrets.md
+  - Security-Pipeline: devsecops/security-pipeline.md
 markdown_extensions:
-  - admonition
-  - codehilite
-  - toc:
-      permalink: true
-  - footnotes
-  - tables
-  - attr_list
-  - pymdownx.superfences
-  - pymdownx.mark
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.snippets
-  - pymdownx.highlight
-  - pymdownx.tabbed
-  - pymdownx.details
-
+- admonition
+- codehilite
+- toc:
+    permalink: true
+- footnotes
+- tables
+- attr_list
+- pymdownx.superfences
+- pymdownx.mark
+- pymdownx.inlinehilite
+- pymdownx.magiclink
+- pymdownx.snippets
+- pymdownx.highlight
+- pymdownx.tabbed
+- pymdownx.details
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/5136Siegfried
+  - icon: fontawesome/brands/github
+    link: https://github.com/5136Siegfried
   generator: false
-  copyright:
-    © 2025 – Siegfried Sekkai – Tous droits réservés
+  copyright: © 2025 – Siegfried Sekkai – Tous droits réservés
