@@ -1,5 +1,13 @@
 # 💡 Good Practices – SRE & DevSecOps
 
+![MkDocs](https://img.shields.io/badge/docs-built%20with%20MkDocs-blue.svg)
+![Material for MkDocs](https://img.shields.io/badge/theme-Material%20for%20MkDocs-4caabc?logo=material-design)
+![License](https://img.shields.io/github/license/5136Siegfried/sre-good-practices)
+[![CI Status](https://github.com/5136Siegfried/sre-good-practices/actions/workflows/ci.yml/badge.svg)](https://github.com/5136Siegfried/sre-good-practices/actions/workflows/ci.yml)
+[![Deploy-docs](https://github.com/5136Siegfried/sre-good-practices/actions/workflows/deploy.yml/badge.svg)](https://github.com/5136Siegfried/sre-good-practices/actions/workflows/deploy.yml)
+[![Documentation](https://img.shields.io/badge/Docs-View%20Online-0a9396.svg)](https://5136Siegfried.github.io/sre-good-practices/)
+
+
 > Une vitrine de mes compétences, convictions et bonnes pratiques en ingénierie de fiabilité et sécurité cloud.
 
 ## 👋 Présentation
