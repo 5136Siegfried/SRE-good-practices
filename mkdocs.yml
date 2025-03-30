@@ -49,7 +49,6 @@ nav:
 markdown_extensions:
   - admonition
   - codehilite
-  - content.code.copy
   - toc:
       permalink: true
   - footnotes
