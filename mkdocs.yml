@@ -26,7 +26,6 @@ theme:
     accent: cyan
 nav:
 - Accueil: index.md
-- Team: team.md
 - Readme: README.md
 - Contribute: contribute.md
 - Architecture:
@@ -39,6 +38,11 @@ nav:
   - Incident-Lifecycle: sre/incident-lifecycle.md
   - Oncall: sre/oncall.md
   - Ci: sre/ci.md
+- Aboutme:
+  - Siegfriedsekkai: aboutme/siegfriedsekkai.md
+  - Manifeste-Devops: aboutme/manifeste-devops.md
+  - Philosophie-Sre: aboutme/philosophie-sre.md
+  - Parcours: aboutme/parcours.md
 - Observability:
   - Prometheus: observability/prometheus.md
   - Grafana: observability/grafana.md
@@ -71,4 +75,4 @@ extra:
   generator: false
   copyright: © 2025 – Siegfried Sekkai – Tous droits réservés
 extra_css:
-  - assets/css/custom.css
+- assets/css/custom.css
