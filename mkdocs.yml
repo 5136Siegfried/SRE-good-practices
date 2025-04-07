@@ -1,4 +1,3 @@
----
 site_name: Good Practices SRE & DevSecOps
 site_description: Documentation structurée autour des bonnes pratiques DevSecOps,
   SRE, CI/CD, astreinte, observabilité et infrastructure.
@@ -44,6 +43,8 @@ nav:
   - Manifeste-Devops: aboutme/manifeste-devops.md
   - Philosophie-Sre: aboutme/philosophie-sre.md
   - Parcours: aboutme/parcours.md
+- Pedagogie:
+  - Intro: pedagogie/performance/intro.md
 - Observability:
   - Prometheus: observability/prometheus.md
   - Grafana: observability/grafana.md
